@@ -1,19 +1,49 @@
 nav{
     .container-fluid{
+        justify-content: space-between;
         .navbar-collapse{
-            .nav-underline{
-                width: 50%;
+            justify-content: space-between;
+            .nav{
                 display: flex;
-                justify-content: space-between;
-                margin-left: 5rem;
+                margin-left: 20px;
                 li{
+                    margin: 0px 10px;
                     a.nav-link{
                         color: black;
+                        font-weight: 600;
                         &.active{
-
+                            font-weight: 700;
                         }
                     }
                 }
+                &.book-mark-ul{
+                    margin-right: 30px;
+                    align-items: center;
+                    .book-mark-div{
+                        position: relative;
+                        .book-mark{
+                            width: 50px;
+                            height: 160px;
+                            background-color: red;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%,-50%);
+                            clip-path: polygon(0 0, 98% 0, 100% 100%, 50% 75%, 0 100%);
+                        }
+                        li{
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            a{
+                                color: white;
+                                z-index: 9999;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }

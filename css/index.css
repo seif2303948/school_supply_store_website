@@ -1,12 +1,51 @@
-nav .container-fluid .navbar-collapse .nav-underline {
-  width: 50%;
-  display: flex;
+nav .container-fluid {
   justify-content: space-between;
-  margin-left: 5rem;
 }
-nav .container-fluid .navbar-collapse .nav-underline li a.nav-link {
+nav .container-fluid .navbar-collapse {
+  justify-content: space-between;
+}
+nav .container-fluid .navbar-collapse .nav {
+  display: flex;
+  margin-left: 20px;
+}
+nav .container-fluid .navbar-collapse .nav li {
+  margin: 0px 10px;
+}
+nav .container-fluid .navbar-collapse .nav li a.nav-link {
   color: black;
+  font-weight: 600;
 }
+nav .container-fluid .navbar-collapse .nav li a.nav-link.active {
+  font-weight: 700;
+}
+nav .container-fluid .navbar-collapse .nav.book-mark-ul {
+  margin-right: 30px;
+  align-items: center;
+}
+nav .container-fluid .navbar-collapse .nav.book-mark-ul .book-mark-div {
+  position: relative;
+}
+nav .container-fluid .navbar-collapse .nav.book-mark-ul .book-mark-div .book-mark {
+  width: 50px;
+  height: 160px;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0 0, 98% 0, 100% 100%, 50% 75%, 0 100%);
+}
+nav .container-fluid .navbar-collapse .nav.book-mark-ul .book-mark-div li {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .container-fluid .navbar-collapse .nav.book-mark-ul .book-mark-div li a {
+  color: white;
+  z-index: 9999;
+}
+
 * {
   margin: 0;
   padding: 0;
