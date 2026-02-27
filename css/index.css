@@ -1,3 +1,16 @@
-
+nav .container-fluid .navbar-collapse .nav-underline {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+}
+nav .container-fluid .navbar-collapse .nav-underline li a.nav-link {
+  color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*# sourceMappingURL=index.css.map */

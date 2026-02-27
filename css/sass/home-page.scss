@@ -1,0 +1,20 @@
+nav{
+    .container-fluid{
+        .navbar-collapse{
+            .nav-underline{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 5rem;
+                li{
+                    a.nav-link{
+                        color: black;
+                        &.active{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
